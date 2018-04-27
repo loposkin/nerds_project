@@ -33,6 +33,18 @@ body::before {
     height: 0;
 }
 
+body.catalog .catalog-link span {
+    border-bottom: 2px solid #fb565a;
+}
+
+body.studio .studio-link span {
+    border-bottom: 2px solid #fb565a;
+
+}
+
+.index-header {
+    min-width: 920px;
+}
 
 
 
@@ -57,8 +69,7 @@ body::before {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: inherit
-        ;
+    width: inherit;
 }
 
 ul {
@@ -134,6 +145,9 @@ ul {
 .header-menu {
     display: block;
     float: right;
+        text-transform: uppercase;
+    
+
 }
 
 
@@ -153,7 +167,9 @@ ul {
     padding-right: 22px;
     padding-top: 45px;
     padding-bottom: 45px;
-    
+    line-height: 30px;
+    font-size: 14px;
+
 }
 
 .header-menu a {
@@ -630,14 +646,14 @@ ul {
 
 .index-main-partners a:nth-child(2) .index-main-partner {
   background-position: -209px -0px;
-  height: 68px;
+  height: 67.5px;
   width: 199px;
     margin: 48px 120px;
 }
 
 .index-main-partners a:nth-child(2) .index-main-partner:hover {
   background-position: -209px -68px;
-  height: 68px;
+  height: 67.5px;
   width: 199px;
     margin: 48px 120px;
 }
@@ -720,4 +736,419 @@ footer a:nth-child(3) .social-network {
 .icon-basket {
     color:#a6a6a6;
 }
+
+.catalog-heading {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 80px;
+    text-transform: uppercase;
+}
+
+.search-settings {
+    width: 240px;
+    float: left;
+}
+
+.catalog-items {
+    width: 570px;
+    float: right;
+}
+
+.features-choice {
+    margin-bottom: 60px;
+}
+
+.features-choice-heading {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.feature-container {
+    position: relative;
+    user-select: none;
+    font-size:16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 25px;
+}
+
+.features-choice input {
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.features-choice input:hover+ label::before {
+    color: #b5b5b5;
+}
+
+.checkbox {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.checkbox::before {
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    font-size: 28px;
+    color: #c1c1c1;
+    cursor: pointer;
+}
+
+.features-choice input:checked ~ .checkbox::before {
+    content: "\2611";
+    left: -6px;
+}
+
+.layout-choice-heading {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.layout-choice {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.layout-choice input {
+    position: absolute;
+   
+    opacity: 0;
+}
+
+.layout-choice label {
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+.layout-choice label::before {
+    font-size: 28px;
+    color: #c1c1c1;
+    position: absolute;
+    left: -8px;
+    top:-4px;
+    cursor: pointer;
+}
+
+.layout-choice input:hover+label::before {
+    color: #b5b5b5;
+}
+
+.layout-choice input:checked + .icon-circle::before {
+    content: "\25cf";
+}
+
+.layout-container {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 25px;
+         user-select: none;
+
+/*
+    padding-left: 30px;
+    cursor: pointer;
+*/
+}
+
+.search-submit {
+    width: 155px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: Roboto;
+    background-color: #f1f1f1;
+    cursor: pointer;
+        outline: 0;
+
+}
+
+.search-submit:hover {
+    background-color: #e5e5e5;
+        outline: 0;
+
+}
+
+.search-submit:focus {
+    border: none;
+    outline: 0;
+}
+
+.search-submit:active {
+    border: none;
+        outline: 0;
+
+    border-top: 3px solid #b5b5b5;
+    background-color: #e5e5e5;
+}
+
+.catalog-items-list {
+    width: 570px;
+    padding: 0;
+}
+
+.catalog-item {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    width: 240px;
+    height: 270px;
+    background-color: #f1f1f1;
+    list-style: none;
+    float: left;
+    margin-right: 80px;
+    margin-bottom: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
+
+.item-background-circles {
+    position: absolute;
+    top: 10px;
+    left:13px;
+}
+
+.item-background-circle {
+    display: block;
+    width: 9px;
+    height: 9px;
+    background-color: white;
+    border-radius: 50%;
+    float: left;
+    margin-right: 6px;
+}
+
+.catalog-item:nth-child(1) .catalog-item-background {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../images/catalog-item1.jpg);
+    z-index: 1;
+}
+
+.catalog-item:nth-child(2) .catalog-item-background {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../images/catalog-item2.jpg);
+        z-index: 1;
+
+}
+
+.catalog-item:nth-child(3) .catalog-item-background {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../images/catalog-item3.jpg);
+        z-index: 1;
+
+}
+
+.catalog-item:nth-child(4) .catalog-item-background {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../images/catalog-item4.jpg);
+        z-index: 1;
+
+}
+
+.catalog-item:nth-child(5) .catalog-item-background {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../images/catalog-item5.jpg);
+        z-index: 1;
+
+}
+
+.catalog-item:nth-child(6) .catalog-item-background {
+    width: 240px;
+    height: 240px;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    background-image: url(../images/catalog-item6.jpg);
+        z-index: 1;
+
+}
+
+.catalog-item:hover {
+    background-color: #797979;
+    transition: 0.3s ease;
+}
+
+.catalog-item-info {
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    background-color: white;
+    position: absolute;
+    z-index: 1000;
+    left: 20px;
+    bottom: 20px;
+    font-weight: bold;
+    font-family: Roboto;
+        transition: 0.3s ease;
+
+}
+
+.catalog-item:hover .catalog-item-info {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.catalog-item-heading {
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.catalog-item-text {
+    text-align: center;
+    line-height: 18px;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.catalog-item-button {
+    font-family: Roboto;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    background-color: #fb565a;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    width: 140px;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.catalog-item-button:hover {
+    background-color: #d6494d;
+}
+
+.catalog-item-button:active {
+    background-color: #b63538;
+    border-top: 2px solid #9b2d30;
+}
+
+.items-sort {
+    width: 570px;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.sort-buttons {
+    text-transform: uppercase;
+    border: 0;
+    padding: 0;
+    background-color: white;
+    margin: 0;
+    outline: 0;
+    font-family: Roboto;
+    font-weight: bold;
+    opacity: 0.3;
+    font-size: 12px;
+    line-height: 18px;
+    border-bottom: 1px dotted #00ca74;
+    cursor: pointer;
+    float: left;
+    margin-left: 40px;
+
+}
+
+.sort-buttons:hover {
+    opacity: 1;
+    border-bottom: 1px solid #00ca74;
+}
+
+.sort-buttons:active {
+    opacity: 1;
+    border: none;
+}
+
+.items-sort-heading {
+    float: left;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+button.icon-up-dir, button.icon-down-dir {
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+/*    float: right;*/
+    background-color: white;
+    cursor: pointer;
+    font-size: 23px;
+    color: #c1c1c1;
+    position: absolute;
+    
+}
+
+button.icon-up-dir:hover, button.icon-down-dir:hover {
+    color: #b5b5b5;
+}
+
+button.icon-up-dir {
+    top: -3px;
+    right: 0;
+}
+
+button.icon-down-dir {
+    top: -3px;
+    right: 23px;
+}
+
+
+button.icon-up-dir:active, button.icon-down-dir:active {
+    color: black;
+}
+
 

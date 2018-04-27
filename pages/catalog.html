@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nerds-catalog</title>
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link rel="stylesheet" href="../css/symbols-nerds.css" type="text/css">
+</head>
+<body class="catalog">
+    <header class="index-header">
+        <div class="index-container">
+            <div class="header-menu-logo clearfix">
+                <div class="header-logo">
+                    <div class="nerds-logo"></div>
+                </div>
+                <a href="" class="header-cart-link"><div class="header-cart">
+                    <i class="icon-basket"></i> Корзина
+                </div></a>
+                <nav class="header-menu">
+                    <ul>
+                        <a href="../index.html"><li class="header-menu-item studio-link"><span>Студия</span></li></a>
+                        <a href="#"><li class="header-menu-item clients-link"><span>Клиенты</span></li></a>
+                        <a href="#"><li class="header-menu-item catalog-link"><span>Магазин</span></li></a>
+                        <a href="#"><li class="header-menu-item contacts-link"><span>Контакты</span></li></a>
+                    </ul>
+                </nav>
+            </div>
+            <div class="catalog-heading">
+                Добро пожаловать в магазин <br>
+                готовых макетов
+            </div>
+        </div>
+    </header>
+    <main class="clearfix">
+        <div class="index-container">
+           <div class="search-settings">
+                <form action="">
+                    <div class="range-slider">
+                        <div class="range-slider-heading">
+                        <label for="">Стоимость:</label>
+                        <input type="range" min="0" max="15000">
+                        </div>
+
+                    </div>
+                    <div class="layout-choice">
+                        <div class="layout-choice-heading">Сетка:</div>
+                        <div class="layout-container">
+                            <input type="radio" name="layout" value="adaptive" id="layout-1" checked>
+                            <label for="layout-1" class="icon-circle">Адаптивная</label>
+                        </div>
+                        <div class="layout-container">
+                            <input type="radio" name="layout" value="fixed" id="layout-2">
+                            <label for="layout-2" class="icon-circle">Фиксированная</label>
+                        </div>
+                        <div class="layout-container">
+                            <input type="radio" name="layout" value="elastic" id="layout-3">
+                            <label for="layout-3" class="icon-circle">Резиновая<br></label>
+                        </div>
+                    </div>
+                    <div class="features-choice">
+                        <div class="features-choice-heading">Особенности:</div>
+                        <div class="feature-container">
+                            <input type="checkbox" name="option1" id="option1" value="slider" checked>
+                            <label class="feature-container checkbox icon-check-off" for="option1" >Слайдер
+                            </label>
+                        </div>
+                        <div class="feature-container">
+                            <input type="checkbox" name="option2" id="option2" value="slider">
+                            <label class="feature-container checkbox icon-check-off" for="option2">Блок преимуществ
+                            </label>
+                        </div>
+                        <div class="feature-container">
+                            <input type="checkbox" name="option3" id="option3" value="slider" checked>
+                            <label class="feature-container checkbox icon-check-off" for="option3">Новости
+                            </label>
+                        </div>
+                        <div class="feature-container">
+                            <input type="checkbox" name="option4" id="option4" value="slider">
+                            <label class="feature-container checkbox icon-check-off" for="option4">Галерея
+                            </label>
+                        </div>
+                        <div class="feature-container">
+                            <input type="checkbox" name="option5" id="option5" value="slider">
+                            <label class="feature-container checkbox icon-check-off" for="option5">Корзина
+                            </label>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="search-submit button">Показать</button>
+                </form>
+           </div>
+           <div class="catalog-items">
+               <div class="items-sort clearfix">
+                   <div class="items-sort-heading">Сортировать:</div>
+                   <button class="sort-buttons">По цене</button>
+                   <button class="sort-buttons">По типу</button>
+                   <button class="sort-buttons">По функционалу</button>
+                   <button class="icon-up-dir"></button>
+                   <button class="icon-down-dir"></button>
+               </div>
+               <ul class="catalog-items-list clearfix">
+                    <li class="catalog-item">
+                        <div class="item-background-circles">
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                        </div>
+                        <div class="catalog-item-background"></div>
+                        <div class="catalog-item-info">
+                           <div class="catalog-item-heading">Aviator</div>
+                           <div class="catalog-item-text">Одностраничный макеты с авторским дизайном</div>
+                           <button class="catalog-item-button button">8000 р.</button>
+                        </div>
+                   </li>
+                   <li class="catalog-item">
+                        <div class="item-background-circles">
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                        </div>
+                        <div class="catalog-item-background"></div>
+                        <div class="catalog-item-info">
+                           <div class="catalog-item-heading">Sunset</div>
+                           <div class="catalog-item-text">Интернет-магазин с личным кабинетом</div>
+                           <button class="catalog-item-button button">10000 р.</button>
+                        </div>
+                   </li>
+                   <li class="catalog-item">
+                        <div class="item-background-circles">
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                        </div>
+                        <div class="catalog-item-background"></div>
+                        <div class="catalog-item-info">
+                           <div class="catalog-item-heading">Forte</div>
+                           <div class="catalog-item-text">Отличный макет для личного блога</div>
+                           <button class="catalog-item-button button">5000 р.</button>
+                        </div>
+                   </li>
+                   <li class="catalog-item">
+                        <div class="item-background-circles">
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                        </div>
+                        <div class="catalog-item-background"></div>
+                        <div class="catalog-item-info">
+                           <div class="catalog-item-heading">Modern organic thai</div>
+                           <div class="catalog-item-text">Сайт для ресторана быстрого питания</div>
+                           <button class="catalog-item-button button">12000 р.</button>
+                        </div>
+                   </li>
+                   <li class="catalog-item">
+                        <div class="item-background-circles">
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                        </div>
+                        <div class="catalog-item-background"></div>
+                        <div class="catalog-item-info">
+                           <div class="catalog-item-heading">Avenue</div>
+                           <div class="catalog-item-text">Макет для блока о путешествиях</div>
+                           <button class="catalog-item-button button">8000 р.</button>
+                        </div>
+                   </li>
+                   <li class="catalog-item">
+                        <div class="item-background-circles">
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                            <span class="item-background-circle"></span>
+                        </div>
+                        <div class="catalog-item-background"></div>
+                        <div class="catalog-item-info">
+                           <div class="catalog-item-heading">Dovetail</div>
+                           <div class="catalog-item-text">Интернет-магазин с галереей товаров</div>
+                           <button class="catalog-item-button button">8000 р.</button>
+                        </div>
+                   </li>
+               </ul>
+               <div class="control-buttons">
+                   <div class="button"></div>
+                   <div class="button"></div>
+                   <div class="button"></div>
+                   <div class="button"></div>
+               </div>
+           </div>
+        </div>
+    </main>
+    <footer class="clearfix">
+        <div class="index-container">
+            <div class="social-networks">
+                <a href=""><div class="social-network vk"><i class="icon-vk"></i></div></a>
+                <a href=""><div class="social-network fb"><i class="icon-facebook"></i></div></a>
+                <a href=""><div class="social-network instagram"><i class="icon-instagramm"></i></div></a>
+            </div>
+            <div class="social-networks-friends">
+                <div class="social-networks-heading">Давайте дружить, это выгодно!</div>
+                <div class="social-network-discount">Скидка 10% для друзей из социальных сетей.</div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

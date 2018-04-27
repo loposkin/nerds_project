@@ -28,7 +28,7 @@ function showSlides(n) {
         dots[i].className = dots[i].className.replace(" dot-active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    timerId3 = setTimeout(addOpacity,100,slideIndex);
+    timerId3 = setTimeout(addOpacity,10,slideIndex);
     dots[slideIndex-1].className +=" dot-active";
     timerId2 = setTimeout(changeOpacity,4500,slideIndex);
 }
@@ -49,7 +49,7 @@ function showSlidesAuto() {
         dots[i].className = dots[i].className.replace(" dot-active", "");
     }
     slides[slideIndex-1].style.display = "block";
-    timerId3 = setTimeout(addOpacity,100,slideIndex);
+    timerId3 = setTimeout(addOpacity,10,slideIndex);
     dots[slideIndex-1].className +=" dot-active";
     timerId2 = setTimeout(changeOpacity,3500,slideIndex);
     timerId = setTimeout(showSlidesAuto, 4000);
