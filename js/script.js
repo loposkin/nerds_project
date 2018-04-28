@@ -1,19 +1,4 @@
-YMaps.jQuery(function(){
-    var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
-    map.setCenter(new YMaps.GeoPoint(30.319794,59.939122), 17);
-    map.addControl(new YMaps.Zoom());
-    map.addControl(new YMaps.ScaleLine());
-    map.enableScrollZoom();
-    
-    var s = new YMaps.Style();
-    s.iconStyle = new YMaps.IconStyle();
-    s.iconStyle.href = "../images/map-icon.png";
-    s.iconStyle.size = new YMaps.Point(231,190);
-    s.iconStyle.offset = new YMaps.Point(-50,-185);
-    var placemark = new YMaps.Placemark(new YMaps.GeoPoint( 30.323055,59.938631),{style: s,hasBalloon:false});
-//    placemark.name = "NЁRDS Studio";
-    map.addOverlay(placemark);
-})
+
 
 var slideIndex = 1;
 var slides = document.getElementsByClassName("index-slider-slide");
