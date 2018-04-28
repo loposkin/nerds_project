@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Nerds-catalog</title>
@@ -20,9 +20,9 @@
                 <nav class="header-menu">
                     <ul>
                         <a href="../index.html"><li class="header-menu-item studio-link"><span>Студия</span></li></a>
-                        <a href="#"><li class="header-menu-item clients-link"><span>Клиенты</span></li></a>
+                        <a href="../index.html#partners"><li class="header-menu-item clients-link"><span>Клиенты</span></li></a>
                         <a href="#"><li class="header-menu-item catalog-link"><span>Магазин</span></li></a>
-                        <a href="#"><li class="header-menu-item contacts-link"><span>Контакты</span></li></a>
+                        <a href="#contacts"><li class="header-menu-item contacts-link"><span>Контакты</span></li></a>
                     </ul>
                 </nav>
             </div>
@@ -97,7 +97,7 @@
                    <button class="sort-buttons">По типу</button>
                    <button class="sort-buttons">По функционалу</button>
                    <button class="icon-up-dir"></button>
-                   <button class="icon-down-dir"></button>
+                   <button class="icon-down-dir  sort-updown-active"></button>
                </div>
                <ul class="catalog-items-list clearfix">
                     <li class="catalog-item">
@@ -179,15 +179,28 @@
                         </div>
                    </li>
                </ul>
-               <div class="control-buttons">
-                   <div class="button"></div>
-                   <div class="button"></div>
-                   <div class="button"></div>
-                   <div class="button"></div>
+               <div class="control-buttons clearfix">
+                   <button class="page-button button page-button-active">1</button>
+                   <button class="page-button button">2</button>
+                   <button class="page-button button">3</button>
+                   <button class="next-page-button button">Следующая</button>
                </div>
            </div>
         </div>
     </main>
+    <a name="contacts"></a>
+    <div class="index-main-map clearfix" >
+          <div class="index-container">
+                <div class="map-contacts">
+                   <div class="map-contacts-heading">Nёrds design studio</div>
+                   <div class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                   <div class="map-contacts-number">тел. +7(812)275-75-75</div>
+                   
+                   <button class="map-contacts-button button" onclick="showOverlay()">Напишите нам</button>
+               </div>
+           </div>
+           <div id="YMapsID"></div>
+    </div>
     <footer class="clearfix">
         <div class="index-container">
             <div class="social-networks">
@@ -201,5 +214,27 @@
             </div>
         </div>
     </footer> 
+    <div class="write-us-block">
+        <div class="write-us-close" onclick="closeOverlay()"></div>
+        <form action="">
+            <div class="write-us-contacts clearfix">
+                <div class="write-us-your-name">
+                    <div class="write-us-heading">Ваше имя:</div>
+                    <input type="text" name="write-us-name" id="write-us-name" placeholder="Представтесь, пожалуйста">
+                </div>
+                <div class="write-us-your-email">
+                    <div class="write-us-heading">Ваш e-mail:</div>
+                    <input type="email" name="write-us-email" id="write-us-email" placeholder="Для отправки ответа">
+                </div>
+            </div>
+            <div class="write-us-your-text">
+                <div class="write-us-heading">Текст письма:</div>
+                <textarea name="write-us-text" id="write-us-text" placeholder="В свободной форме"></textarea>
+            </div>
+            <button type="submit" class="write-us-block-button button">Отправить</button>
+        </form>
+    </div>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

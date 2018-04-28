@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Nerds главная</title>
@@ -134,8 +134,27 @@
         </div>
     </main>
     <a name="contacts"></a>
-    <div class="index-main-map">
+<!--
+    <div class="index-main-map clearfix">
+          <div class="container">
+                <div class="map-contacts">
+                   
+               </div>
+           </div>
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A30c85efb1f83ca2fb80bc48891611439e0c8b32b00afcbb1b3741dfccff0915a&amp;width=100%25&amp;height=415&amp;lang=ru_RU&amp;scroll=true"></script>
+    </div>
+-->
+    <div class="index-main-map clearfix" >
+          <div class="index-container">
+                <div class="map-contacts">
+                   <div class="map-contacts-heading">Nёrds design studio</div>
+                   <div class="map-contacts-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+                   <div class="map-contacts-number">тел. +7(812)275-75-75</div>
+                   
+                   <button class="map-contacts-button button" onclick="showOverlay()">Напишите нам</button>
+               </div>
+           </div>
+           <div id="YMapsID"></div>
     </div>
     <footer class="clearfix">
         <div class="index-container">
@@ -150,6 +169,28 @@
             </div>
         </div>
     </footer> 
+    <div class="write-us-block">
+        <div class="write-us-close" onclick="closeOverlay()"></div>
+        <form action="">
+            <div class="write-us-contacts clearfix">
+                <div class="write-us-your-name">
+                    <div class="write-us-heading">Ваше имя:</div>
+                    <input type="text" name="write-us-name" id="write-us-name" placeholder="Представтесь, пожалуйста">
+                </div>
+                <div class="write-us-your-email">
+                    <div class="write-us-heading">Ваш e-mail:</div>
+                    <input type="email" name="write-us-email" id="write-us-email" placeholder="Для отправки ответа">
+                </div>
+            </div>
+            <div class="write-us-your-text">
+                <div class="write-us-heading">Текст письма:</div>
+                <textarea name="write-us-text" id="write-us-text" placeholder="В свободной форме"></textarea>
+            </div>
+            <button type="submit" class="write-us-block-button button">Отправить</button>
+        </form>
+    </div>
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
     <script type="text/javascript" src="js/script.js"></script>
+    
 </body>
 </html>
